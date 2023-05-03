@@ -1,11 +1,11 @@
 import Page from '@/components/Page/Page';
 
-const TvSeries = () => {
+const Bookmarks = () => {
   return (
     <Page>
-      <div>TV Series page</div>
+      <div>Bookmarks</div>
     </Page>
   );
 };
 
-export default TvSeries;
+export default Bookmarks;

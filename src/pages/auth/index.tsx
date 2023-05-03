@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import cn from 'classnames';
 
 // Styles
 import stylesPage from './Auth.module.scss';
