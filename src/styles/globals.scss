@@ -1,6 +1,13 @@
-@use "./reset";
-@use "./colors" as *;
+@use './reset';
+@use './typography';
+@use './colors' as *;
 
 body {
   background-color: $color__background;
+}
+
+:root {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: $color__primary;
 }

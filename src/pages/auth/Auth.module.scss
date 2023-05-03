@@ -1,0 +1,72 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.auth-page {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 130px 24px 0;
+
+  @include onTablet {
+    padding-top: 185px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 65px;
+    left: 50%;
+
+    width: 32px;
+    height: 25px;
+
+    background-image: url('../../../public/images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translate(-50%, -50%);
+
+    @include onTablet {
+      top: 92px;
+    }
+  }
+
+  &__form-container {
+    max-width: 400px;
+
+    margin: 0 auto;
+    padding: 24px 24px 32px;
+
+    background-color: $color__background--secondary;
+    border-radius: 10px;
+
+    @include onTablet {
+      padding: 32px;
+
+      border-radius: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+  }
+
+  &__toggle-form-text {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  &__toggle-form {
+    margin-left: 8px;
+
+    color: $color__accent;
+    cursor: pointer;
+  }
+}
