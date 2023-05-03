@@ -1,0 +1,15 @@
+@use '../../styles/mixins' as *;
+
+.page {
+  min-height: 100vh;
+
+  @include onTablet {
+    padding: 24px;
+  }
+
+  @include onDesktop {
+    display: flex;
+
+    padding: 32px;
+  }
+}
